@@ -1,1 +1,19 @@
-ddfghjk
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                sh '''
+                nkdir test.ymal
+                rm -rf main.tf
+                '''
+            }
+        }
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
